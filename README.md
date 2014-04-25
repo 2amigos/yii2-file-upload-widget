@@ -54,18 +54,18 @@ use dosamigos\fileupload\FileUpload;
 use dosamigos\fileupload\FileUploadUI;
 ?>
 <?= FileUploadUI::widget([
-        'model' => $model,
-        'attribute' => 'image',
-        'url' => ['media/upload', 'id' => $tour_id],
-        'gallery' => false,
-        'fieldOptions' => [
-            'accept' => 'image/*'
-        ],
-        'clientOptions' => [
-            'maxFileSize' => 2000000
-        ]
-    ]);
-    ?>
+	'model' => $model,
+	'attribute' => 'image',
+	'url' => ['media/upload', 'id' => $tour_id],
+	'gallery' => false,
+	'fieldOptions' => [
+    		'accept' => 'image/*'
+	],
+	'clientOptions' => [
+    		'maxFileSize' => 2000000
+	]
+]);
+?>
 ```
 
 Further Information
