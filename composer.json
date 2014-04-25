@@ -1,0 +1,23 @@
+{
+    "name": "2amigos/yii2-file-upload-widget",
+    "description": "BlueImp jQuery File Upload Widget for Yii2.",
+    "keywords": ["yii", "extension", "widget", "upload"],
+    "type": "yii2-extension",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Antonio Ramirez",
+            "email": "ramirez.cobos@gmail.com",
+            "homepage": "http://2amigos.us"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+        "2amigos/yii2-gallery-widget" : "0.1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "dosamigos\\fileupload\\": ""
+        }
+    }
+}
