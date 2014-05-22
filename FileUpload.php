@@ -46,8 +46,8 @@ class FileUpload extends BaseUpload
     public function run()
     {
         echo $this->hasModel()
-            ? Html::activeTextInput($this->model, $this->attribute, $this->options)
-            : Html::textInput($this->name, $this->value, $this->options);
+            ? Html::activeFileInput($this->model, $this->attribute, $this->options)
+            : Html::fileInput($this->name, $this->value, $this->options);
 
         $this->registerClientScript();
     }
@@ -83,4 +83,4 @@ class FileUpload extends BaseUpload
         }
         $view->registerJs(implode("\n", $js));
     }
-} 
+}
