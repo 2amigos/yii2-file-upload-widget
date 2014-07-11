@@ -70,7 +70,7 @@ class FileUploadUI extends BaseUpload
 
         $this->options['id'] .= '-form';
         $this->options['enctype'] = 'multipart/form-data';
-        $this->options['uploadTemplateId'] = $this->uploadTemplateId ? : '#template-download';
+        $this->options['uploadTemplateId'] = $this->uploadTemplateId ? : '#template-upload';
         $this->options['downloadTemplateId'] = $this->downloadTemplateId ? : '#template-download';
     }
 
