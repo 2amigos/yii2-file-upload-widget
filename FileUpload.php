@@ -59,18 +59,11 @@ class FileUpload extends BaseUpload
     {
         $view = $this->getView();
 
-        $bundle = FileUploadAsset::register($view);
         if($this->plus) {
-            $bundle->js[] = 'blueimp-load-image/js/load-image.min.js';
-            $bundle->js[] = 'blueimp-canvas-to-blob/js/canvas-to-blob.min.js';
-            $bundle->js[] = 'blueimp-file-upload/js/jquery.iframe-transport.js';
-            $bundle->js[] = 'blueimp-file-upload/js/jquery.fileupload-process.js';
-            $bundle->js[] = 'blueimp-file-upload/js/jquery.fileupload-image.js';
-            $bundle->js[] = 'blueimp-file-upload/js/jquery.fileupload-audio.js';
-            $bundle->js[] = 'blueimp-file-upload/js/jquery.fileupload-video.js';
-            $bundle->js[] = 'blueimp-file-upload/js/jquery.fileupload-validate.js';
+            FileUploadPlusAsset::register($view);
+        } else {
+            FileUploadAsset::register($view);
         }
-
 
         $options = Json::encode($this->clientOptions);
         $id = $this->options['id'];
