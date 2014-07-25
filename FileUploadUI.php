@@ -109,7 +109,7 @@ class FileUploadUI extends BaseUpload
         $js[] = ";jQuery('#$id').fileupload($options);";
         if (!empty($this->clientEvents)) {
             foreach ($this->clientEvents as $event => $handler) {
-                $js[] = "jQuery(#$id).on('$event', $handler);";
+                $js[] = "jQuery('#$id').on('$event', $handler);";
             }
         }
         $view->registerJs(implode("\n", $js));
