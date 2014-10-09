@@ -30,7 +30,7 @@ The widget comes with two flavors:
 - FileUploadUI: [BasicPlus UI](http://blueimp.github.io/jQuery-File-Upload/index.html)
 
 
-```
+```PHP
 <?php
 use dosamigos\fileupload\FileUpload;
 
@@ -44,7 +44,19 @@ use dosamigos\fileupload\FileUpload;
 	'options' => ['accept' => 'image/*'],
 	'clientOptions' => [
 		'maxFileSize' => 2000000
-	]
+	],
+	// Also, you can specify jQuery-File-Upload events
+	// see: https://github.com/blueimp/jQuery-File-Upload/wiki/Options#processing-callback-options
+	'clientEvents' => [
+	    'fileuploaddone' => 'function(e, data) {
+	                            console.log(e);
+	                            console.log(data);
+	                        }',
+        'fileuploadfail' => 'function(e, data) {
+	                            console.log(e);
+	                            console.log(data);
+                            }',
+	],
 ]);?>
 
 <?php
@@ -63,7 +75,18 @@ use dosamigos\fileupload\FileUploadUI;
 	],
 	'clientOptions' => [
     		'maxFileSize' => 2000000
-	]
+	],
+	// ... 
+	'clientEvents' => [
+    	    'fileuploaddone' => 'function(e, data) {
+    	                            console.log(e);
+    	                            console.log(data);
+    	                        }',
+            'fileuploadfail' => 'function(e, data) {
+    	                            console.log(e);
+    	                            console.log(data);
+                                }',
+    ],
 ]);
 ?>
 ```
