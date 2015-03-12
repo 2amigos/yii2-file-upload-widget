@@ -12,7 +12,7 @@ $context = $this->context;
             <!-- The fileinput-button span is used to style the file input field as button -->
             <span class="btn btn-success fileinput-button">
                 <i class="glyphicon glyphicon-plus"></i>
-                <span>Add files...</span>
+                <span><?= Yii::t('fileupload', 'Add files') ?>...</span>
 
                 <?= $context->model instanceof \yii\base\Model && $context->attribute !== null
                     ? Html::activeFileInput($context->model, $context->attribute, $context->fieldOptions)
@@ -21,15 +21,15 @@ $context = $this->context;
             </span>
             <button type="submit" class="btn btn-primary start">
                 <i class="glyphicon glyphicon-upload"></i>
-                <span>Start upload</span>
+                <span><?= Yii::t('fileupload', 'Start upload') ?></span>
             </button>
             <button type="reset" class="btn btn-warning cancel">
                 <i class="glyphicon glyphicon-ban-circle"></i>
-                <span>Cancel upload</span>
+                <span><?= Yii::t('fileupload', 'Cancel upload') ?></span>
             </button>
             <button type="button" class="btn btn-danger delete">
                 <i class="glyphicon glyphicon-trash"></i>
-                <span>Delete</span>
+                <span><?= Yii::t('fileupload', 'Delete') ?></span>
             </button>
             <input type="checkbox" class="toggle">
             <!-- The global file processing state -->
