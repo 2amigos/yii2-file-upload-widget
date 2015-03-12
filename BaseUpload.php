@@ -37,9 +37,11 @@ class BaseUpload extends InputWidget
      * @see https://github.com/blueimp/jQuery-File-Upload/wiki/Options#callback-options
      */
     public $clientEvents = [];
-
-
+    /**
+     * @var array for the internalization configuration
+     */
     public $i18n = [];
+    
     /**
      * @inheritdoc
      * @throws \yii\base\InvalidConfigException
@@ -56,6 +58,9 @@ class BaseUpload extends InputWidget
         $this->clientOptions['url'] = Url::to($this->url);
     }
     
+    /**
+     * Initialize internalization
+     */
     public function initI18N()
     {
         Yii::setAlias('@fileupload', dirname(__FILE__));
