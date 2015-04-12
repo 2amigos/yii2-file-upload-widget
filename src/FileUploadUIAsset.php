@@ -1,9 +1,10 @@
 <?php
 /**
- * @copyright Copyright (c) 2013 2amigOS! Consulting Group LLC
- * @link http://2amigos.us
- * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
+ * @link https://github.com/2amigos/yii2-selectize-widget
+ * @copyright Copyright (c) 2013-2015 2amigOS! Consulting Group LLC
+ * @license http://opensource.org/licenses/BSD-3-Clause
  */
+
 namespace dosamigos\fileupload;
 
 use yii\web\AssetBundle;
@@ -11,19 +12,14 @@ use yii\web\AssetBundle;
 /**
  * FileUploadUIAsset
  *
- * @author Antonio Ramirez <amigo.cobos@gmail.com>
- * @link http://www.ramirezcobos.com/
- * @link http://www.2amigos.us/
- * @package dosamigos\fileupload
+ * @author Alexander Kochetov <creocoder@gmail.com>
  */
 class FileUploadUIAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/2amigos/yii2-file-upload-widget/assets/';
-
+    public $sourcePath = '@bower';
     public $css = [
         'blueimp-file-upload/css/jquery.fileupload.css'
     ];
-
     public $js = [
         'blueimp-file-upload/js/vendor/jquery.ui.widget.js',
         'blueimp-tmpl/js/tmpl.min.js',
@@ -39,9 +35,8 @@ class FileUploadUIAsset extends AssetBundle
         'blueimp-file-upload/js/jquery.fileupload-ui.js',
 
     ];
-
     public $depends = [
         'yii\web\JqueryAsset',
         'yii\bootstrap\BootstrapPluginAsset',
     ];
-} 
+}
