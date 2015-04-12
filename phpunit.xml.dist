@@ -17,6 +17,9 @@
     <filter>
         <whitelist>
             <directory suffix=".php">src/</directory>
+            <exclude>
+                <directory suffix=".php">src/messages/</directory>
+            </exclude>
         </whitelist>
     </filter>
     <logging>
