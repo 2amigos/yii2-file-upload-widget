@@ -41,19 +41,19 @@ class FileUploadUI extends BaseUpload
     /**
      * @var string the form view path to render the JQuery File Upload UI
      */
-    public $formView = '@vendor/2amigos/yii2-file-upload-widget/views/form';
+    public $formView = 'form';
     /**
      * @var string the upload view path to render the js upload template
      */
-    public $uploadTemplateView = '@vendor/2amigos/yii2-file-upload-widget/views/upload';
+    public $uploadTemplateView = 'upload';
     /**
      * @var string the download view path to render the js download template
      */
-    public $downloadTemplateView = '@vendor/2amigos/yii2-file-upload-widget/views/download';
+    public $downloadTemplateView = 'download';
     /**
      * @var string the gallery
      */
-    public $galleryTemplateView = '@vendor/2amigos/yii2-file-upload-widget/views/gallery';
+    public $galleryTemplateView = 'gallery';
 
 
     /**
