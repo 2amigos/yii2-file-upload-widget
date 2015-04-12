@@ -1,3 +1,7 @@
+build
+docs
+vendor
+
 # cache directories
 Thumbs.db
 *.DS_Store
