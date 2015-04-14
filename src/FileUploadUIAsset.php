@@ -23,7 +23,7 @@ class FileUploadUIAsset extends AssetBundle
     public $js = [
         'blueimp-file-upload/js/vendor/jquery.ui.widget.js',
         'blueimp-tmpl/js/tmpl.min.js',
-        'blueimp-load-image/js/load-image.min.js',
+        'blueimp-load-image/js/load-image.all.min.js',
         'blueimp-canvas-to-blob/js/canvas-to-blob.min.js',
         'blueimp-file-upload/js/jquery.iframe-transport.js',
         'blueimp-file-upload/js/jquery.fileupload.js',
