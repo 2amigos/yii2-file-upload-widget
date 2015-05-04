@@ -7,7 +7,7 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/2amigos/yii2-file-upload-widget.svg?style=flat-square)](https://scrutinizer-ci.com/g/2amigos/yii2-file-upload-widget)
 [![Total Downloads](https://img.shields.io/packagist/dt/2amigos/yii2-file-upload-widget.svg?style=flat-square)](https://packagist.org/packages/2amigos/yii2-file-upload-widget)
 
-Renders a [BlueImp jQuery File Upload plugin](http://blueimp.github.io/jQuery-File-Upload/).
+Renders a [BlueImp jQuery File Upload plugin](http://blueimp.github.io/jQuery-File-Upload/). That plugin integrates multiple file selection, drag&drop support, progress bars, validation and preview of images.
 
 ## Installation
 
