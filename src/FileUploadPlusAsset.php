@@ -16,21 +16,21 @@ use yii\web\AssetBundle;
  */
 class FileUploadPlusAsset extends AssetBundle
 {
-    public $sourcePath = '@bower';
+    public $sourcePath = '@bower/blueimp-file-upload';
     public $css = [
-        'blueimp-file-upload/css/jquery.fileupload.css'
+        'css/jquery.fileupload.css'
     ];
     public $js = [
-        'blueimp-load-image/js/load-image.min.js',
-        'blueimp-canvas-to-blob/js/canvas-to-blob.min.js',
-        'blueimp-file-upload/js/jquery.iframe-transport.js',
-        'blueimp-file-upload/js/jquery.fileupload-process.js',
-        'blueimp-file-upload/js/jquery.fileupload-image.js',
-        'blueimp-file-upload/js/jquery.fileupload-audio.js',
-        'blueimp-file-upload/js/jquery.fileupload-video.js',
-        'blueimp-file-upload/js/jquery.fileupload-validate.js'
+        'js/jquery.iframe-transport.js',
+        'js/jquery.fileupload-process.js',
+        'js/jquery.fileupload-image.js',
+        'js/jquery.fileupload-audio.js',
+        'js/jquery.fileupload-video.js',
+        'js/jquery.fileupload-validate.js'
     ];
     public $depends = [
         'dosamigos\fileupload\FileUploadAsset',
+        'dosamigos\fileupload\BlueimpLoadImageAsset',
+        'dosamigos\fileupload\BlueimpCanvasToBlobAsset',
     ];
 }

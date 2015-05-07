@@ -2,9 +2,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="/3/css/blueimp-gallery.min.css" rel="stylesheet">
+<link href="/5/css/blueimp-gallery.min.css" rel="stylesheet">
 <link href="/2/css/bootstrap.css" rel="stylesheet">
-<link href="/0/blueimp-file-upload/css/jquery.fileupload.css" rel="stylesheet"></head>
+<link href="/0/css/jquery.fileupload.css" rel="stylesheet"></head>
 <body>
 
 <!-- The template to display files available for upload -->
@@ -379,20 +379,20 @@
     <a class="play-pause"></a>
     <ol class="indicator"></ol>
 </div><script src="/1/jquery.js"></script>
-<script src="/3/js/blueimp-gallery.min.js"></script>
+<script src="/5/js/blueimp-gallery.min.js"></script>
 <script src="/2/js/bootstrap.js"></script>
-<script src="/0/blueimp-file-upload/js/vendor/jquery.ui.widget.js"></script>
-<script src="/0/blueimp-tmpl/js/tmpl.min.js"></script>
-<script src="/0/blueimp-load-image/js/load-image.all.min.js"></script>
-<script src="/0/blueimp-canvas-to-blob/js/canvas-to-blob.min.js"></script>
-<script src="/0/blueimp-file-upload/js/jquery.iframe-transport.js"></script>
-<script src="/0/blueimp-file-upload/js/jquery.fileupload.js"></script>
-<script src="/0/blueimp-file-upload/js/jquery.fileupload-process.js"></script>
-<script src="/0/blueimp-file-upload/js/jquery.fileupload-image.js"></script>
-<script src="/0/blueimp-file-upload/js/jquery.fileupload-audio.js"></script>
-<script src="/0/blueimp-file-upload/js/jquery.fileupload-video.js"></script>
-<script src="/0/blueimp-file-upload/js/jquery.fileupload-validate.js"></script>
-<script src="/0/blueimp-file-upload/js/jquery.fileupload-ui.js"></script>
+<script src="/3/js/load-image.all.min.js"></script>
+<script src="/4/js/canvas-to-blob.min.js"></script>
+<script src="/6/js/tmpl.min.js"></script>
+<script src="/0/js/vendor/jquery.ui.widget.js"></script>
+<script src="/0/js/jquery.iframe-transport.js"></script>
+<script src="/0/js/jquery.fileupload.js"></script>
+<script src="/0/js/jquery.fileupload-process.js"></script>
+<script src="/0/js/jquery.fileupload-image.js"></script>
+<script src="/0/js/jquery.fileupload-audio.js"></script>
+<script src="/0/js/jquery.fileupload-video.js"></script>
+<script src="/0/js/jquery.fileupload-validate.js"></script>
+<script src="/0/js/jquery.fileupload-ui.js"></script>
 <script type="text/javascript">jQuery(document).ready(function () {
 ;jQuery('#model-test-form').fileupload({"url":"http://example.com/upload.php"});
 ;jQuery('#w2-form').fileupload({"url":"http://example.com/upload.php"});
