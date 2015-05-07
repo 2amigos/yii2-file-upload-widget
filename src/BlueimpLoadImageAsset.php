@@ -18,6 +18,6 @@ class BlueimpLoadImageAsset extends AssetBundle
 {
     public $sourcePath = '@bower/blueimp-load-image';
     public $js = [
-        'js/load-image.min.js',
+        'js/load-image.all.min.js',
     ];
 }
