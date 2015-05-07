@@ -16,27 +16,27 @@ use yii\web\AssetBundle;
  */
 class FileUploadUIAsset extends AssetBundle
 {
-    public $sourcePath = '@bower';
+    public $sourcePath = '@bower/blueimp-file-upload';
     public $css = [
-        'blueimp-file-upload/css/jquery.fileupload.css'
+        'css/jquery.fileupload.css'
     ];
     public $js = [
-        'blueimp-file-upload/js/vendor/jquery.ui.widget.js',
-        'blueimp-tmpl/js/tmpl.min.js',
-        'blueimp-load-image/js/load-image.all.min.js',
-        'blueimp-canvas-to-blob/js/canvas-to-blob.min.js',
-        'blueimp-file-upload/js/jquery.iframe-transport.js',
-        'blueimp-file-upload/js/jquery.fileupload.js',
-        'blueimp-file-upload/js/jquery.fileupload-process.js',
-        'blueimp-file-upload/js/jquery.fileupload-image.js',
-        'blueimp-file-upload/js/jquery.fileupload-audio.js',
-        'blueimp-file-upload/js/jquery.fileupload-video.js',
-        'blueimp-file-upload/js/jquery.fileupload-validate.js',
-        'blueimp-file-upload/js/jquery.fileupload-ui.js',
+        'js/vendor/jquery.ui.widget.js',
+        'js/jquery.iframe-transport.js',
+        'js/jquery.fileupload.js',
+        'js/jquery.fileupload-process.js',
+        'js/jquery.fileupload-image.js',
+        'js/jquery.fileupload-audio.js',
+        'js/jquery.fileupload-video.js',
+        'js/jquery.fileupload-validate.js',
+        'js/jquery.fileupload-ui.js',
 
     ];
     public $depends = [
         'yii\web\JqueryAsset',
         'yii\bootstrap\BootstrapPluginAsset',
+        'dosamigos\fileupload\BlueimpLoadImageAsset',
+        'dosamigos\fileupload\BlueimpCanvasToBlobAsset',
+        'dosamigos\fileupload\BlueimpTmplAsset'
     ];
 }
