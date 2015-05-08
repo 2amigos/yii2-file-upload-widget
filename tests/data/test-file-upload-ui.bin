@@ -93,18 +93,18 @@
 
                 <input type="hidden" name="Model[test]" value=""><input type="file" id="model-test" name="Model[test]" multiple>
             </span>
-            <button type="submit" class="btn btn-primary start">
+            <a class="btn btn-primary start">
                 <i class="glyphicon glyphicon-upload"></i>
                 <span>Start upload</span>
-            </button>
-            <button type="reset" class="btn btn-warning cancel">
+            </a>
+            <a class="btn btn-warning cancel">
                 <i class="glyphicon glyphicon-ban-circle"></i>
                 <span>Cancel upload</span>
-            </button>
-            <button type="button" class="btn btn-danger delete">
+            </a>
+            <a class="btn btn-danger delete">
                 <i class="glyphicon glyphicon-trash"></i>
                 <span>Delete</span>
-            </button>
+            </a>
             <input type="checkbox" class="toggle">
             <!-- The global file processing state -->
             <span class="fileupload-process"></span>
@@ -217,18 +217,18 @@
 
                 <input type="file" id="w2" name="test" multiple>
             </span>
-            <button type="submit" class="btn btn-primary start">
+            <a class="btn btn-primary start">
                 <i class="glyphicon glyphicon-upload"></i>
                 <span>Start upload</span>
-            </button>
-            <button type="reset" class="btn btn-warning cancel">
+            </a>
+            <a class="btn btn-warning cancel">
                 <i class="glyphicon glyphicon-ban-circle"></i>
                 <span>Cancel upload</span>
-            </button>
-            <button type="button" class="btn btn-danger delete">
+            </a>
+            <a class="btn btn-danger delete">
                 <i class="glyphicon glyphicon-trash"></i>
                 <span>Delete</span>
-            </button>
+            </a>
             <input type="checkbox" class="toggle">
             <!-- The global file processing state -->
             <span class="fileupload-process"></span>
@@ -341,18 +341,18 @@
 
                 <input type="file" id="custom-id" name="test" multiple>
             </span>
-            <button type="submit" class="btn btn-primary start">
+            <a class="btn btn-primary start">
                 <i class="glyphicon glyphicon-upload"></i>
                 <span>Start upload</span>
-            </button>
-            <button type="reset" class="btn btn-warning cancel">
+            </a>
+            <a class="btn btn-warning cancel">
                 <i class="glyphicon glyphicon-ban-circle"></i>
                 <span>Cancel upload</span>
-            </button>
-            <button type="button" class="btn btn-danger delete">
+            </a>
+            <a class="btn btn-danger delete">
                 <i class="glyphicon glyphicon-trash"></i>
                 <span>Delete</span>
-            </button>
+            </a>
             <input type="checkbox" class="toggle">
             <!-- The global file processing state -->
             <span class="fileupload-process"></span>
