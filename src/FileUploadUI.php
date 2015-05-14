@@ -66,10 +66,9 @@ class FileUploadUI extends BaseUpload
         $this->fieldOptions['multiple'] = true;
         $this->fieldOptions['id'] = ArrayHelper::getValue($this->options, 'id');
 
-        $this->options['id'] .= '-form';
-        $this->options['enctype'] = 'multipart/form-data';
-        $this->options['uploadTemplateId'] = $this->uploadTemplateId ? : '#template-upload';
-        $this->options['downloadTemplateId'] = $this->downloadTemplateId ? : '#template-download';
+        $this->options['id'] .= '-fileupload';
+        $this->options['data-upload-template-id'] = $this->uploadTemplateId ? : 'template-upload';
+        $this->options['data-download-template-id'] = $this->downloadTemplateId ? : 'template-download';
     }
 
     /**

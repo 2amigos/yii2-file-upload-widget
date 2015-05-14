@@ -83,7 +83,7 @@
 
 </script>
     <!-- The file upload form used as target for the file upload widget -->
-<form id="model-test-form" action="http://example.com/upload.php" method="post" enctype="multipart/form-data" uploadTemplateId="#template-upload" downloadTemplateId="#template-download">    <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
+<div id="model-test-fileupload" data-upload-template-id="template-upload" data-download-template-id="template-download">    <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
     <div class="row fileupload-buttonbar">
         <div class="col-lg-7">
             <!-- The fileinput-button span is used to style the file input field as button -->
@@ -93,18 +93,18 @@
 
                 <input type="hidden" name="Model[test]" value=""><input type="file" id="model-test" name="Model[test]" multiple>
             </span>
-            <button type="submit" class="btn btn-primary start">
+            <a class="btn btn-primary start">
                 <i class="glyphicon glyphicon-upload"></i>
                 <span>Start upload</span>
-            </button>
-            <button type="reset" class="btn btn-warning cancel">
+            </a>
+            <a class="btn btn-warning cancel">
                 <i class="glyphicon glyphicon-ban-circle"></i>
                 <span>Cancel upload</span>
-            </button>
-            <button type="button" class="btn btn-danger delete">
+            </a>
+            <a class="btn btn-danger delete">
                 <i class="glyphicon glyphicon-trash"></i>
                 <span>Delete</span>
-            </button>
+            </a>
             <input type="checkbox" class="toggle">
             <!-- The global file processing state -->
             <span class="fileupload-process"></span>
@@ -121,7 +121,7 @@
     </div>
     <!-- The table listing the files available for upload/download -->
     <table role="presentation" class="table table-striped"><tbody class="files"></tbody></table>
-</form><!-- The blueimp Gallery widget -->
+</div><!-- The blueimp Gallery widget -->
 <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-filter=":even">
     <div class="slides"></div>
     <h3 class="title"></h3>
@@ -207,7 +207,7 @@
 
 </script>
     <!-- The file upload form used as target for the file upload widget -->
-<form id="w2-form" action="http://example.com/upload.php" method="post" enctype="multipart/form-data" uploadTemplateId="#template-upload" downloadTemplateId="#template-download">    <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
+<div id="w2-fileupload" data-upload-template-id="template-upload" data-download-template-id="template-download">    <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
     <div class="row fileupload-buttonbar">
         <div class="col-lg-7">
             <!-- The fileinput-button span is used to style the file input field as button -->
@@ -217,18 +217,18 @@
 
                 <input type="file" id="w2" name="test" multiple>
             </span>
-            <button type="submit" class="btn btn-primary start">
+            <a class="btn btn-primary start">
                 <i class="glyphicon glyphicon-upload"></i>
                 <span>Start upload</span>
-            </button>
-            <button type="reset" class="btn btn-warning cancel">
+            </a>
+            <a class="btn btn-warning cancel">
                 <i class="glyphicon glyphicon-ban-circle"></i>
                 <span>Cancel upload</span>
-            </button>
-            <button type="button" class="btn btn-danger delete">
+            </a>
+            <a class="btn btn-danger delete">
                 <i class="glyphicon glyphicon-trash"></i>
                 <span>Delete</span>
-            </button>
+            </a>
             <input type="checkbox" class="toggle">
             <!-- The global file processing state -->
             <span class="fileupload-process"></span>
@@ -245,7 +245,7 @@
     </div>
     <!-- The table listing the files available for upload/download -->
     <table role="presentation" class="table table-striped"><tbody class="files"></tbody></table>
-</form><!-- The blueimp Gallery widget -->
+</div><!-- The blueimp Gallery widget -->
 <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-filter=":even">
     <div class="slides"></div>
     <h3 class="title"></h3>
@@ -331,7 +331,7 @@
 
 </script>
     <!-- The file upload form used as target for the file upload widget -->
-<form id="custom-id-form" action="http://example.com/upload.php" method="post" enctype="multipart/form-data" uploadTemplateId="#template-upload" downloadTemplateId="#template-download">    <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
+<div id="custom-id-fileupload" data-upload-template-id="template-upload" data-download-template-id="template-download">    <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
     <div class="row fileupload-buttonbar">
         <div class="col-lg-7">
             <!-- The fileinput-button span is used to style the file input field as button -->
@@ -341,18 +341,18 @@
 
                 <input type="file" id="custom-id" name="test" multiple>
             </span>
-            <button type="submit" class="btn btn-primary start">
+            <a class="btn btn-primary start">
                 <i class="glyphicon glyphicon-upload"></i>
                 <span>Start upload</span>
-            </button>
-            <button type="reset" class="btn btn-warning cancel">
+            </a>
+            <a class="btn btn-warning cancel">
                 <i class="glyphicon glyphicon-ban-circle"></i>
                 <span>Cancel upload</span>
-            </button>
-            <button type="button" class="btn btn-danger delete">
+            </a>
+            <a class="btn btn-danger delete">
                 <i class="glyphicon glyphicon-trash"></i>
                 <span>Delete</span>
-            </button>
+            </a>
             <input type="checkbox" class="toggle">
             <!-- The global file processing state -->
             <span class="fileupload-process"></span>
@@ -369,7 +369,7 @@
     </div>
     <!-- The table listing the files available for upload/download -->
     <table role="presentation" class="table table-striped"><tbody class="files"></tbody></table>
-</form><!-- The blueimp Gallery widget -->
+</div><!-- The blueimp Gallery widget -->
 <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-filter=":even">
     <div class="slides"></div>
     <h3 class="title"></h3>
@@ -394,9 +394,9 @@
 <script src="/0/js/jquery.fileupload-validate.js"></script>
 <script src="/0/js/jquery.fileupload-ui.js"></script>
 <script type="text/javascript">jQuery(document).ready(function () {
-;jQuery('#model-test-form').fileupload({"url":"http://example.com/upload.php"});
-;jQuery('#w2-form').fileupload({"url":"http://example.com/upload.php"});
-;jQuery('#custom-id-form').fileupload({"url":"http://example.com/upload.php"});
-jQuery('#custom-id-form').on('test2', function () { });
+;jQuery('#model-test-fileupload').fileupload({"url":"http://example.com/upload.php"});
+;jQuery('#w2-fileupload').fileupload({"url":"http://example.com/upload.php"});
+;jQuery('#custom-id-fileupload').fileupload({"url":"http://example.com/upload.php"});
+jQuery('#custom-id-fileupload').on('test2', function () { });
 });</script></body>
 </html>
