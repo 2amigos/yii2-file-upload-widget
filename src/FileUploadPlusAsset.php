@@ -30,6 +30,7 @@ class FileUploadPlusAsset extends AssetBundle
     ];
     public $depends = [
         'dosamigos\fileupload\FileUploadAsset',
+        'yii\bootstrap\BootstrapAsset',
         'dosamigos\fileupload\BlueimpLoadImageAsset',
         'dosamigos\fileupload\BlueimpCanvasToBlobAsset',
     ];
