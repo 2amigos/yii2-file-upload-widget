@@ -1,5 +1,5 @@
 {
-    "name": "2amigos/yii2-file-upload-widget",
+    "name": "weison-tech/yii2-file-upload-widget",
     "description": "Blueimp file upload widget for the Yii framework",
     "keywords": [
         "2amigos",
@@ -11,7 +11,7 @@
     ],
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
-    "homepage": "https://github.com/2amigos/yii2-file-upload-widget",
+    "homepage": "https://github.com/weison-tech/yii2-file-upload-widget",
     "authors": [
         {
             "name": "Alexander Kochetov",
