@@ -1,3 +1,6 @@
+/**
+* @author Erkan Karataş https://github.com/karataserkan
+*/
 return [
     'Add files' => 'Dosyaları Ekle',
     'Start upload' => 'Yüklemeye Başla',
