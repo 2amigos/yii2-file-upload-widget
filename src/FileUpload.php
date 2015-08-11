@@ -41,9 +41,11 @@ class FileUpload extends BaseUpload
      */
     public function run()
     {
-        echo $this->hasModel()
+        $input = $this->hasModel()
             ? Html::activeFileInput($this->model, $this->attribute, $this->options)
             : Html::fileInput($this->name, $this->value, $this->options);
+
+        echo $this->render('uploadButton', ['input' => $input]);
 
         $this->registerClientScript();
     }
