@@ -17,12 +17,12 @@
  * NOTE: this file must be saved in UTF-8 encoding.
  */
 return [
-    'Add files' => '',
-    'Start upload' => '',
-    'Cancel upload' => '',
-    'Start' => '',
-    'Cancel' => '',
-    'Error' => '',
-    'Delete' => '',
-    'Processing' => '',
+    'Add files' => 'Ajouter',
+    'Start upload' => 'Démarrer',
+    'Cancel upload' => 'Annuler',
+    'Start' => 'Démarrer',
+    'Cancel' => 'Annuler',
+    'Error' => 'Erreur',
+    'Delete' => 'Supprimer',
+    'Processing' => 'Télechargement en cours',
 ];
