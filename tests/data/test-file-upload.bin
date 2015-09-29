@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link href="/2/css/bootstrap.css" rel="stylesheet">
+<link href="/0/css/jquery.fileupload.css" rel="stylesheet"></head>
+<body>
+
+<input type="hidden" name="Model[test]" value=""><input type="file" id="model-test" name="Model[test]" data-url="http://example.com/upload.php">
+<input type="file" id="w0" name="test" data-url="http://example.com/upload.php">
+<input type="file" id="custom-id" name="test" data-url="http://example.com/upload.php"><script src="/1/jquery.js"></script>
+<script src="/0/js/vendor/jquery.ui.widget.js"></script>
+<script src="/0/js/jquery.iframe-transport.js"></script>
+<script src="/0/js/jquery.fileupload.js"></script>
+<script src="/3/js/load-image.all.min.js"></script>
+<script src="/4/js/canvas-to-blob.min.js"></script>
+<script src="/0/js/jquery.fileupload-process.js"></script>
+<script src="/0/js/jquery.fileupload-image.js"></script>
+<script src="/0/js/jquery.fileupload-audio.js"></script>
+<script src="/0/js/jquery.fileupload-video.js"></script>
+<script src="/0/js/jquery.fileupload-validate.js"></script>
+<script type="text/javascript">jQuery(document).ready(function () {
+;jQuery('#model-test').fileupload({"url":"http://example.com/upload.php"});
+;jQuery('#w0').fileupload({"url":"http://example.com/upload.php"});
+;jQuery('#custom-id').fileupload({"url":"http://example.com/upload.php"});
+jQuery('#custom-id').on('test2', function () { });
+});</script></body>
+</html>
