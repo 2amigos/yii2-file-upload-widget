@@ -24,5 +24,5 @@ return [
     'Cancel' => 'Annuler',
     'Error' => 'Erreur',
     'Delete' => 'Supprimer',
-    'Processing' => 'Télechargement en cours',
+    'Processing' => 'Chargement',
 ];
