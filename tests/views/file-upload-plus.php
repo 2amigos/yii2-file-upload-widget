@@ -11,17 +11,20 @@ use yii\web\JsExpression;
     'url' => 'http://example.com/upload.php',
     'model' => $model,
     'attribute' => 'test',
+    'plus' => true,
 ]) ?>
 
 <?= FileUpload::widget([
     'url' => 'http://example.com/upload.php',
     'name' => 'test',
+    'plus' => true,
 ]) ?>
 
 <?= FileUpload::widget([
     'url' => 'http://example.com/upload.php',
     'id' => 'custom-id',
     'name' => 'test',
+    'plus' => true,
     'clientEvents' => [
         'test2' => new JsExpression('function () { }'),
     ],
