@@ -26,6 +26,10 @@ class FileUploadUI extends BaseUpload
      */
     public $gallery = true;
     /**
+     * @var bool load previously uploaded images or not
+     */
+    public $load = false;
+    /**
      * @var array the HTML attributes for the file input tag.
      * @see \yii\helpers\Html::renderTagAttributes() for details on how attributes are being rendered.
      */
@@ -110,5 +114,20 @@ class FileUploadUI extends BaseUpload
             }
         }
         $view->registerJs(implode("\n", $js));
+
+        if ($this->load) {
+            $view->registerJs("
+                $('#$id').addClass('fileupload-processing');
+                $.ajax({
+                    url: $('#$id').fileupload('option', 'url'),
+                    dataType: 'json',
+                    context: $('#$id')[0]
+                }).always(function () {
+                    $(this).removeClass('fileupload-processing');
+                }).done(function (result) {
+                    $(this).fileupload('option', 'done').call(this, $.Event('done'), {result: result});
+                });
+            ");
+        }
     }
 }
