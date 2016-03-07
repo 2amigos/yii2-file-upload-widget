@@ -8,7 +8,7 @@ php:
 
 install:
   - composer self-update
-  - composer global require "fxp/composer-asset-plugin:1.0.0"
+  - composer global require "fxp/composer-asset-plugin:1.1.2"
   - composer install
 
 before_script:
