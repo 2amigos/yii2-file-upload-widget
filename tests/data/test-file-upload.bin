@@ -6,9 +6,27 @@
 <link href="/0/css/jquery.fileupload.css" rel="stylesheet"></head>
 <body>
 
-<input type="hidden" name="Model[test]" value=""><input type="file" id="model-test" name="Model[test]" data-url="http://example.com/upload.php">
-<input type="file" id="w0" name="test" data-url="http://example.com/upload.php">
-<input type="file" id="custom-id" name="test" data-url="http://example.com/upload.php"><script src="/1/jquery.js"></script>
+
+<span class="btn btn-success fileinput-button">
+   <i class="glyphicon glyphicon-plus"></i>
+   <span>Select file...</span>
+   <!-- The file input field used as target for the file upload widget -->
+    <input type="hidden" name="Model[test]" value=""><input type="file" id="model-test" name="Model[test]" data-url="http://example.com/upload.php"></span>
+
+
+<span class="btn btn-success fileinput-button">
+   <i class="glyphicon glyphicon-plus"></i>
+   <span>Select file...</span>
+   <!-- The file input field used as target for the file upload widget -->
+    <input type="file" id="w0" name="test" data-url="http://example.com/upload.php"></span>
+
+
+<span class="btn btn-success fileinput-button">
+   <i class="glyphicon glyphicon-plus"></i>
+   <span>Select file...</span>
+   <!-- The file input field used as target for the file upload widget -->
+    <input type="file" id="custom-id" name="test" data-url="http://example.com/upload.php"></span>
+<script src="/1/jquery.js"></script>
 <script src="/0/js/vendor/jquery.ui.widget.js"></script>
 <script src="/0/js/jquery.iframe-transport.js"></script>
 <script src="/0/js/jquery.fileupload.js"></script>
