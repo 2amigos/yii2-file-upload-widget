@@ -100,7 +100,9 @@ use dosamigos\fileupload\FileUploadUI;
 
 public function actionImageUpload()
 {
-	$imageFile = UploadedFile::getInstanceByName('Transport[name]');
+        $model = new WhateverYourModel();
+
+	$imageFile = UploadedFile::getInstance($model, 'image');
 	$directory = \Yii::getAlias('@frontend/web/img/temp') . DIRECTORY_SEPARATOR . Yii::$app->session->id . DIRECTORY_SEPARATOR;
 	if (!is_dir($directory)) {
 		mkdir($directory);
