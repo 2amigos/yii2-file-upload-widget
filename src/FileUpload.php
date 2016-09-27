@@ -1,7 +1,7 @@
 <?php
 /**
  * @link https://github.com/2amigos/yii2-file-upload-widget
- * @copyright Copyright (c) 2013-2015 2amigOS! Consulting Group LLC
+ * @copyright Copyright (c) 2013-2016 2amigOS! Consulting Group LLC
  * @license http://opensource.org/licenses/BSD-3-Clause
  */
 
@@ -24,7 +24,7 @@ class FileUpload extends BaseUpload
      * @var bool whether to register the js files for the basic +
      */
     public $plus = false;
-    
+
     /**
      * @var bool whether to render the default button
      */
