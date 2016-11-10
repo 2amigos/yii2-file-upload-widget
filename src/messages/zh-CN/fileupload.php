@@ -26,4 +26,5 @@ return [
     'Error' => '错误',
     'Delete' => '删除',
     'Processing' => '正在处理',
+    'Select file...' => '选择文件...',
 ];
