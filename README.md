@@ -61,13 +61,12 @@ use dosamigos\fileupload\FileUpload;
                                 console.log(data);
                             }',
     ],
-]);?>
+]); ?>
 
 <?php
+use dosamigos\fileupload\FileUploadUI;
 
 // with UI
-
-use dosamigos\fileupload\FileUploadUI;
 ?>
 <?= FileUploadUI::widget([
     'model' => $model,
@@ -75,24 +74,23 @@ use dosamigos\fileupload\FileUploadUI;
     'url' => ['media/upload', 'id' => $tour_id],
     'gallery' => false,
     'fieldOptions' => [
-            'accept' => 'image/*'
+        'accept' => 'image/*'
     ],
     'clientOptions' => [
-            'maxFileSize' => 2000000
+        'maxFileSize' => 2000000
     ],
     // ...
     'clientEvents' => [
-            'fileuploaddone' => 'function(e, data) {
-                                    console.log(e);
-                                    console.log(data);
-                                }',
-            'fileuploadfail' => 'function(e, data) {
-                                    console.log(e);
-                                    console.log(data);
-                                }',
+        'fileuploaddone' => 'function(e, data) {
+                                console.log(e);
+                                console.log(data);
+                            }',
+        'fileuploadfail' => 'function(e, data) {
+                                console.log(e);
+                                console.log(data);
+                            }',
     ],
-]);
-?>
+]); ?>
 
 <?php
 
@@ -100,13 +98,15 @@ use dosamigos\fileupload\FileUploadUI;
 
 public function actionImageUpload()
 {
-        $model = new WhateverYourModel();
+    $model = new WhateverYourModel();
 
     $imageFile = UploadedFile::getInstance($model, 'image');
-    $directory = \Yii::getAlias('@frontend/web/img/temp') . DIRECTORY_SEPARATOR . Yii::$app->session->id . DIRECTORY_SEPARATOR;
+
+    $directory = Yii::getAlias('@frontend/web/img/temp') . DIRECTORY_SEPARATOR . Yii::$app->session->id . DIRECTORY_SEPARATOR;
     if (!is_dir($directory)) {
-        mkdir($directory);
+        FileHelper::createDirectory($directory);
     }
+
     if ($imageFile) {
         $uid = uniqid(time(), true);
         $fileName = $uid . '.' . $imageFile->extension;
@@ -114,37 +114,42 @@ public function actionImageUpload()
         if ($imageFile->saveAs($filePath)) {
             $path = '/img/temp/' . Yii::$app->session->id . DIRECTORY_SEPARATOR . $fileName;
             return Json::encode([
-                'files' => [[
-                    'name' => $fileName,
-                    'size' => $imageFile->size,
-                    "url" => $path,
-                    "thumbnailUrl" => $path,
-                    "deleteUrl" => 'image-delete?name=' . $fileName,
-                    "deleteType" => "POST"
-                ]]
+                'files' => [
+                    [
+                        'name' => $fileName,
+                        'size' => $imageFile->size,
+                        'url' => $path,
+                        'thumbnailUrl' => $path,
+                        'deleteUrl' => 'image-delete?name=' . $fileName,
+                        'deleteType' => 'POST',
+                    ],
+                ],
             ]);
         }
     }
+
     return '';
 }
 
 public function actionImageDelete($name)
 {
-    $directory = \Yii::getAlias('@frontend/web/img/temp') . DIRECTORY_SEPARATOR . Yii::$app->session->id;
+    $directory = Yii::getAlias('@frontend/web/img/temp') . DIRECTORY_SEPARATOR . Yii::$app->session->id;
     if (is_file($directory . DIRECTORY_SEPARATOR . $name)) {
         unlink($directory . DIRECTORY_SEPARATOR . $name);
     }
+
     $files = FileHelper::findFiles($directory);
     $output = [];
-    foreach ($files as $file){
-        $path = '/img/temp/' . Yii::$app->session->id . DIRECTORY_SEPARATOR . basename($file);
+    foreach ($files as $file) {
+        $fileName = basename($file);
+        $path = '/img/temp/' . Yii::$app->session->id . DIRECTORY_SEPARATOR . $fileName;
         $output['files'][] = [
-            'name' => basename($file),
+            'name' => $fileName,
             'size' => filesize($file),
-            "url" => $path,
-            "thumbnailUrl" => $path,
-            "deleteUrl" => 'image-delete?name=' . basename($file),
-            "deleteType" => "POST"
+            'url' => $path,
+            'thumbnailUrl' => $path,
+            'deleteUrl' => 'image-delete?name=' . $fileName,
+            'deleteType' => 'POST',
         ];
     }
     return Json::encode($output);
