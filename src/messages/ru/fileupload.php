@@ -26,4 +26,5 @@ return [
     'Error' => 'Ошибка',
     'Delete' => 'Удалить',
     'Processing' => 'Загрузка',
+    'Select file...' => 'Выбрать файл',
 ];

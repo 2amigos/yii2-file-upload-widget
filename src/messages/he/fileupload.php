@@ -18,13 +18,13 @@
  * NOTE: this file must be saved in UTF-8 encoding.
  */
 return [
-    'Add files' => 'Dodaj pliki',
-    'Start upload' => 'Wyślij',
-    'Cancel upload' => 'Anuluj wysyłanie',
-    'Start' => 'Start',
-    'Cancel' => 'Anuluj',
-    'Error' => 'Błąd',
-    'Delete' => 'Usuń',
-    'Processing' => 'Przetwarzanie',
-    'Select file...' => 'Wybierz plik...',
+    'Add files' => 'הוספת קבצים',
+    'Start upload' => 'התחלת העלאה',
+    'Cancel upload' => 'ביטול העלאה',
+    'Start' => 'התחלה',
+    'Cancel' => 'ביטול',
+    'Error' => 'שגיאה',
+    'Delete' => 'מחיקה',
+    'Processing' => 'מעבד',
+    'Select file...' => 'בחר קובץ...'
 ];

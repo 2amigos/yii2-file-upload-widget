@@ -1,5 +1,7 @@
+<?php
 /**
 * @author Erkan Karataş https://github.com/karataserkan
+* edited Tolga Turan https://github.com/tlgtrn
 */
 return [
     'Add files' => 'Dosyaları Ekle',
@@ -10,4 +12,5 @@ return [
     'Error' => 'Hata',
     'Delete' => 'Sil',
     'Processing' => 'İşleniyor',
+    'Select file...' => 'Dosya seç...',
 ];
