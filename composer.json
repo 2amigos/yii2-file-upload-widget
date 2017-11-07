@@ -14,11 +14,6 @@
     "homepage": "https://github.com/2amigos/yii2-file-upload-widget",
     "authors": [
         {
-            "name": "Alexander Kochetov",
-            "email": "creocoder@gmail.com",
-            "role": "Developer"
-        },
-        {
             "name": "2amigOS! Consulting Group",
             "email": "hola@2amigos.us",
             "homepage": "http://2amigos.us",
@@ -39,11 +34,15 @@
             "dosamigos\\fileupload\\": "src"
         }
     },
+    "config": {
+        "fxp-asset": {
+            "installer-paths": {
+                "npm-asset-library": "vendor/npm",
+                "bower-asset-library": "vendor/bower"
+            }
+        }
+    },
     "extra": {
-        "asset-installer-paths": {
-            "npm-asset-library": "vendor/npm",
-            "bower-asset-library": "vendor/bower"
-        },
         "branch-alias": {
             "dev-master": "1.0-dev"
         }

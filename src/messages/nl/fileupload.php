@@ -18,13 +18,13 @@
  * NOTE: this file must be saved in UTF-8 encoding.
  */
 return [
-  'Add files' => 'Aggiungi file',
-  'Start upload' => 'Inizia Upload',
-  'Cancel upload' => 'Annulla Upload',
-  'Start' => 'Inizia',
-  'Cancel' => 'Annulla',
-  'Error' => 'Errore',
-  'Delete' => 'Cancella',
-  'Processing' => 'In elaborazione',
-  'Select file...' => 'Seleziona file'
+    'Add files' => 'Kies bestanden',
+    'Start upload' => 'Start upload',
+    'Cancel upload' => 'Annuleer upload',
+    'Start' => 'Start',
+    'Cancel' => 'Annuleer',
+    'Error' => 'Error',
+    'Delete' => 'Verwijderen',
+    'Processing' => 'Bezig',
+    'Select file...' => 'Kies bestand...'
 ];

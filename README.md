@@ -175,7 +175,6 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 ## Credits
 
 - [Antonio Ramirez](https://github.com/tonydspaniard)
-- [Alexander Kochetov](https://github.com/creocoder)
 - [All Contributors](https://github.com/2amigos/yii2-file-upload-widget/graphs/contributors)
 
 ## License

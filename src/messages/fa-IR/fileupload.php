@@ -18,13 +18,13 @@
  * NOTE: this file must be saved in UTF-8 encoding.
  */
 return [
-  'Add files' => 'Aggiungi file',
-  'Start upload' => 'Inizia Upload',
-  'Cancel upload' => 'Annulla Upload',
-  'Start' => 'Inizia',
-  'Cancel' => 'Annulla',
-  'Error' => 'Errore',
-  'Delete' => 'Cancella',
-  'Processing' => 'In elaborazione',
-  'Select file...' => 'Seleziona file'
+    'Add files' => 'افزودن فایل‌ها',
+    'Start upload' => 'شروع آپلود',
+    'Cancel upload' => 'لغو آپلود',
+    'Start' => 'شروع',
+    'Cancel' => 'لغو',
+    'Error' => 'خطا',
+    'Delete' => 'حذف',
+    'Processing' => 'در حال پردازش',
+    'Select file...' => 'انتخاب فایل ...'
 ];

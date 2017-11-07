@@ -1,7 +1,7 @@
 <?php
 /**
  * @link https://github.com/2amigos/yii2-file-upload-widget
- * @copyright Copyright (c) 2013-2016 2amigOS! Consulting Group LLC
+ * @copyright Copyright (c) 2013-2017 2amigOS! Consulting Group LLC
  * @license http://opensource.org/licenses/BSD-3-Clause
  */
 
@@ -12,7 +12,7 @@ use yii\web\AssetBundle;
 /**
  * FileUploadAsset
  *
- * @author Alexander Kochetov <creocoder@gmail.com>
+ * @author Antonio Ramirez <hola@2amigos.us>
  */
 class FileUploadAsset extends AssetBundle
 {
