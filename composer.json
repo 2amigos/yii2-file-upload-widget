@@ -21,10 +21,10 @@
         }
     ],
     "require": {
-        "yiisoft/yii2": "~2.0.0",
-        "yiisoft/yii2-bootstrap": "~2.0.0",
-        "2amigos/yii2-gallery-widget": "~1.0",
-        "bower-asset/blueimp-file-upload": "~9.9"
+        "yiisoft/yii2": "^2.0.0",
+        "yiisoft/yii2-bootstrap": "^2.0.0",
+        "2amigos/yii2-gallery-widget": "^1.0",
+        "bower-asset/blueimp-file-upload": "^9.9"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.0"
