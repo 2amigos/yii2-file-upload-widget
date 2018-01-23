@@ -85,7 +85,7 @@
     <!-- The file upload form used as target for the file upload widget -->
 <div id="model-test-fileupload" data-upload-template-id="template-upload" data-download-template-id="template-download">    <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
     <div class="row fileupload-buttonbar">
-        <div class="col-lg-7">
+        <div class="col-lg-12">
             <!-- The fileinput-button span is used to style the file input field as button -->
             <span class="btn btn-success fileinput-button">
                 <i class="glyphicon glyphicon-plus"></i>
@@ -209,7 +209,7 @@
     <!-- The file upload form used as target for the file upload widget -->
 <div id="w2-fileupload" data-upload-template-id="template-upload" data-download-template-id="template-download">    <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
     <div class="row fileupload-buttonbar">
-        <div class="col-lg-7">
+        <div class="col-lg-12">
             <!-- The fileinput-button span is used to style the file input field as button -->
             <span class="btn btn-success fileinput-button">
                 <i class="glyphicon glyphicon-plus"></i>
@@ -333,7 +333,7 @@
     <!-- The file upload form used as target for the file upload widget -->
 <div id="custom-id-fileupload" data-upload-template-id="template-upload" data-download-template-id="template-download">    <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
     <div class="row fileupload-buttonbar">
-        <div class="col-lg-7">
+        <div class="col-lg-12">
             <!-- The fileinput-button span is used to style the file input field as button -->
             <span class="btn btn-success fileinput-button">
                 <i class="glyphicon glyphicon-plus"></i>
