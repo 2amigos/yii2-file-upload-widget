@@ -31,6 +31,11 @@ class FileUpload extends BaseUpload
     public $useDefaultButton = true;
 
     /**
+     * @var string the upload view path to render the js upload template
+     */
+    public $uploadButtonTemplateView = 'uploadButton';
+
+    /**
      * @inheritdoc
      */
     public function init()
@@ -51,7 +56,7 @@ class FileUpload extends BaseUpload
             : Html::fileInput($this->name, $this->value, $this->options);
 
         echo $this->useDefaultButton
-            ? $this->render('uploadButton', ['input' => $input])
+            ? $this->render($this->uploadButtonTemplateView, ['input' => $input])
             : $input;
 
         $this->registerClientScript();
