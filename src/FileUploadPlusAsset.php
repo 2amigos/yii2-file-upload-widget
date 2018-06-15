@@ -13,6 +13,7 @@ use yii\web\AssetBundle;
  * FileUploadPlusAsset
  *
  * @author Antonio Ramirez <hola@2amigos.us>
+ * @author Semenov Alexander <semenov@skeeks.com>
  */
 class FileUploadPlusAsset extends AssetBundle
 {
@@ -32,5 +33,11 @@ class FileUploadPlusAsset extends AssetBundle
         'dosamigos\fileupload\FileUploadAsset',
         'dosamigos\fileupload\BlueimpLoadImageAsset',
         'dosamigos\fileupload\BlueimpCanvasToBlobAsset',
+    ];
+    public $publishOptions = [
+        'except' => [
+            'server/*',
+            'test'
+        ],
     ];
 }
