@@ -13,6 +13,7 @@ use yii\web\AssetBundle;
  * FileUploadAsset
  *
  * @author Antonio Ramirez <hola@2amigos.us>
+ * @author Semenov Alexander <semenov@skeeks.com>
  */
 class FileUploadAsset extends AssetBundle
 {
@@ -28,5 +29,11 @@ class FileUploadAsset extends AssetBundle
     public $depends = [
         'yii\web\JqueryAsset',
         'yii\bootstrap\BootstrapAsset',
+    ];
+    public $publishOptions = [
+        'except' => [
+            'server/*',
+            'test'
+        ],
     ];
 }
