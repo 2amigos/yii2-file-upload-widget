@@ -23,7 +23,7 @@ return [
   'Cancel upload' => 'Upload abbrechen',
   'Start' => 'Anfang',
   'Cancel' => 'Abbrechen',
-  'Error' => 'Feheler',
+  'Error' => 'Fehler',
   'Delete' => 'Löschen',
   'Processing' => 'Verarbeitung',
   'Select file...' => 'Dateien auswählen'
