@@ -24,7 +24,7 @@ use yii\web\UploadedFile;
  * @author Antonio Ramirez <hola@2amigos.us>
  * @package dosamigos\fileupload\actions
  */
-class AbstractUploadAction extends Action
+class FileUploadAction extends Action
 {
     /**
      * @var string the AR class name that we need to link the uploaded instance to
