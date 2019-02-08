@@ -26,4 +26,5 @@ return [
     'Error' => 'Erro',
     'Delete' => 'Apagar',
     'Processing' => 'Processando',
+    'Select file...' => 'Selecione o arquivo...'
 ];
