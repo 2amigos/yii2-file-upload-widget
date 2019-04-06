@@ -22,3 +22,6 @@ nbproject
 # mac deployment helpers
 switch
 index
+
+# composer
+composer.lock
